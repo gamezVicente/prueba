@@ -1,7 +1,8 @@
 import os
 
 from flask import (Flask, redirect, render_template, request,
-                   send_from_directory, url_for)
+                   send_from_directory, url_for, current_app)
+import sendgrid
 
 app = Flask(__name__)
 
