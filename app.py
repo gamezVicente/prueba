@@ -1,11 +1,16 @@
-from flask import Flask
 import os
 
-def create_app():
-    app = Flask(__name__)
+from flask import (Flask, redirect, render_template, request,
+                   send_from_directory, url_for)
 
-    import portfolio
+app = Flask(__name__)
 
-    app.register_blueprint(portfolio.bp)
 
-    return app
+@app.route('/')
+def index():
+   print('Request for index page received')
+   return render_template('portfolio/index.html')
+
+
+if __name__ == '__main__':
+   app.run()
