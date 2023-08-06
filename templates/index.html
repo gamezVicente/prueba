@@ -14,8 +14,9 @@
     <title>Vicente Gamez - Full Stack Developer</title>
 </head>
 <body>
+    <!-- Barra de navegacion -->
     <header class="navbar">
-        <img class="logo" src="{{ url_for('static', filename='logo.PNG') }}"><img/>
+        <img class="logo" src="{{ url_for('static', filename='logo.PNG') }}" width="170px" height="50px"><img/>
         <nav class="nav">
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -25,6 +26,8 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Introduccion a pagina -->
     <div class="container">
         <div class="hero white-bg">
             <div class="hero-content">
@@ -45,6 +48,7 @@
         </div>
     </div>
 
+    <!-- Sobre el autor -->
     <div id="about" class="center">
         <div class="content">
             <div class="row vert-pad">
@@ -65,5 +69,43 @@
             </div>
         </div>
     </div>
+
+    <!-- Proyectos -->
+    <div id="portafolio" class="center padded white-bg">
+        <div class="padded">
+            <div class="padded">
+                <h1 id="h1"><em>¿Aún no te sientes convencido? Mira lo que he construido!</em></h1>
+            </div>
+            <div class="row">
+                <div class="project">
+                    <img src="../static/projects/project-1.jpg" alt="">
+                </div>
+                <div class="project">
+                    <img src="../static/projects/project-2.jpg" alt="">
+                </div>
+                <div class="project">
+                    <img src="../static/projects/project-3.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="project">
+                    <img src="../static/projects/project-4.jpg" alt="">
+                </div>
+                <div class="project">
+                    <img src="../static/projects/project-5.jpg" alt="">
+                </div>
+                <div class="project">
+                    <img src="../static/projects/project-6.jpg" alt="">
+                </div>
+            </div>
+            <button class="project-hide-btn">X</button>
+        </div>
+    </div>
+    <img src="../static/projects/project-1-big.jpg" style="display: none;">
+    <img src="../static/projects/project-2-big.jpg" style="display: none;">
+    <img src="../static/projects/project-3-big.jpg" style="display: none;">
+    <img src="../static/projects/project-4-big.jpg" style="display: none;">
+    <img src="../static/projects/project-5-big.jpg" style="display: none;">
+    <img src="../static/projects/project-6-big.jpg" style="display: none;">
 </body>
 </html>
