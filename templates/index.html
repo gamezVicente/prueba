@@ -107,5 +107,65 @@
     <img src="../static/projects/project-4-big.jpg" style="display: none;">
     <img src="../static/projects/project-5-big.jpg" style="display: none;">
     <img src="../static/projects/project-6-big.jpg" style="display: none;">
+
+    <!-- Contacto -->
+    <div class="center padded">
+        <div class="content">
+            <div class="row vert-pad">
+                <div class="left padded">
+                    <h1>¡Ahora o nunca! Trabajemos juntos</h1>
+                    <p>
+                        Daré mi mejor esfuerzo para aprender y aportar valor al proyecto para que podamos tener una fructífera relación. <br>
+                    </p>
+                </div>
+                <div id="contacto" class="right padded">
+                    <form action="#" class="contact-form" method="post">
+                        <input type="text" name="name" placeholder="Nombre" required>
+                        <input type="email" name="email" placeholder="Correo" required>
+                        <textarea placeholder="Mensaje" name="message" required minlength="10"></textarea>
+                        <button class="btn full-width" >Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<!-- Footer --> 
+<footer class="footer">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="{{ url_for('static', filename='logo_black.png') }}" alt="logo de Vicente Gamez">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quam.</p>
+        </div>
+        <div class="box">
+            <h2>ENCUENTRAME EN REDES</h2>
+            <div class="social-links">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='twitter.png') }}" alt="" class="social btn" width="30">
+                </a>
+                <a href="#">
+                    <img src="{{ url_for('static', filename='github.png') }}" alt="" class="social btn" width="30">
+                </a>
+                <a href="">
+                    <img src="{{ url_for('static', filename='linkedin.png') }}" alt="" class="social btn" width="30">
+                </a>
+                <a href="">
+                    <img src="{{ url_for('static', filename='facebook.png') }}" alt="" class="social btn" width="30">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2022 <b>Vicente Gamez</b> - Todos los derechos reservados.</small>
+    </div>
+</footer>
 </html>
