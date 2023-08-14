@@ -16,8 +16,7 @@
     <title>Vicente Gamez - Full Stack Developer</title>
 </head>
 <body>
-    <div class="container">
-        <!-- Barra de navegacion -->
+    <!-- Barra de navegacion -->
     <header class="navbar">
         <img class="logo" src="{{ url_for('static', filename='logo.PNG') }}" width="170px" height="50px"><img/>
         <nav class="nav">
@@ -49,89 +48,88 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Sobre el autor -->
-    <div id="about" class="center">
-        <div class="content">
-            <div class="row vert-pad">
-                <div class="left padded">
-                    <h1 id="about"><em>Sobre Mí</em></h1>
-                </div>
-                <div class="right padded">
-                    <p>
-                        Mi nombre es Vicente Antonio Gámez Díaz, soy originario de México, de San Luis Potosí. 🇲🇽🧑<br> 
-                        Hasta el momento no he tenido la oportunidad de tener un empleo como desarrollador, sin embargo, constantemente me encuentro aprendiendo nuevas tecnologías y desarrollando aplicaciones, 
-                        buscando mejorar mis habilidades en Python, JavaScript, HTML, CSS y MySql. 📓 <br> Esta web la construí desde cero utilizando Python 🐍 y Flask, después de haber realizado un par de proyectos
-                        que estoy ansioso de compartir contigo en mi sección de <a href="#portafolio" class="orange">portafolio.</a> 👜<br>
-                        Te recuerdo que estoy a tus ordenes y que estoy muy emocionado y ansioso por conocer más de este mundo tecnológico. Así que:
-                    </p>
-                    <h1><strong>¡Podemos conversar de lo que quieras!</strong></h1>
-                    <p>Solo enviame un correo haciendo click <a class="orange" href="#contacto">aquí</a>. 📥</p>
+        <!-- Sobre el autor -->
+        <div id="about" class="center">
+            <div class="content">
+                <div class="row vert-pad">
+                    <div class="left padded">
+                        <h1 id="about"><em>Sobre Mí</em></h1>
+                    </div>
+                    <div class="right padded">
+                        <p>
+                            Mi nombre es Vicente Antonio Gámez Díaz, soy originario de México, de San Luis Potosí. 🇲🇽🧑<br> 
+                            Hasta el momento no he tenido la oportunidad de tener un empleo como desarrollador, sin embargo, constantemente me encuentro aprendiendo nuevas tecnologías y desarrollando aplicaciones, 
+                            buscando mejorar mis habilidades en Python, JavaScript, HTML, CSS y MySql. 📓 <br> Esta web la construí desde cero utilizando Python 🐍 y Flask, después de haber realizado un par de proyectos
+                            que estoy ansioso de compartir contigo en mi sección de <a href="#portafolio" class="orange">portafolio.</a> 👜<br>
+                            Te recuerdo que estoy a tus ordenes y que estoy muy emocionado y ansioso por conocer más de este mundo tecnológico. Así que:
+                        </p>
+                        <h1><strong>¡Podemos conversar de lo que quieras!</strong></h1>
+                        <p>Solo enviame un correo haciendo click <a class="orange" href="#contacto">aquí</a>. 📥</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Proyectos -->
-    <div id="portafolio" class="center padded white-bg">
-        <div class="padded">
+        <!-- Proyectos -->
+        <div id="portafolio" class="center padded white-bg">
             <div class="padded">
-                <h1 id="h1"><em>¿Aún no te sientes convencido? Mira lo que he construido!</em></h1>
+                <div class="padded">
+                    <h1 id="h1"><em>¿Aún no te sientes convencido? Mira lo que he construido!</em></h1>
+                </div>
+                <div class="row">
+                    <div class="project">
+                        <img src="../static/projects/project-1.jpg" alt="">
+                    </div>
+                    <div class="project">
+                        <img src="../static/projects/project-2.jpg" alt="">
+                    </div>
+                    <div class="project">
+                        <img src="../static/projects/project-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="project">
+                        <img src="../static/projects/project-4.jpg" alt="">
+                    </div>
+                    <div class="project">
+                        <img src="../static/projects/project-5.jpg" alt="">
+                    </div>
+                    <div class="project">
+                        <img src="../static/projects/project-6.jpg" alt="">
+                    </div>
+                </div>
+                <button class="project-hide-btn">X</button>
             </div>
-            <div class="row">
-                <div class="project">
-                    <img src="../static/projects/project-1.jpg" alt="">
-                </div>
-                <div class="project">
-                    <img src="../static/projects/project-2.jpg" alt="">
-                </div>
-                <div class="project">
-                    <img src="../static/projects/project-3.jpg" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="project">
-                    <img src="../static/projects/project-4.jpg" alt="">
-                </div>
-                <div class="project">
-                    <img src="../static/projects/project-5.jpg" alt="">
-                </div>
-                <div class="project">
-                    <img src="../static/projects/project-6.jpg" alt="">
-                </div>
-            </div>
-            <button class="project-hide-btn">X</button>
         </div>
-    </div>
-    <img src="../static/projects/project-1-big.jpg" style="display: none;">
-    <img src="../static/projects/project-2-big.jpg" style="display: none;">
-    <img src="../static/projects/project-3-big.jpg" style="display: none;">
-    <img src="../static/projects/project-4-big.jpg" style="display: none;">
-    <img src="../static/projects/project-5-big.jpg" style="display: none;">
-    <img src="../static/projects/project-6-big.jpg" style="display: none;">
+        <img src="../static/projects/project-1-big.jpg" style="display: none;">
+        <img src="../static/projects/project-2-big.jpg" style="display: none;">
+        <img src="../static/projects/project-3-big.jpg" style="display: none;">
+        <img src="../static/projects/project-4-big.jpg" style="display: none;">
+        <img src="../static/projects/project-5-big.jpg" style="display: none;">
+        <img src="../static/projects/project-6-big.jpg" style="display: none;">
 
-    <!-- Contacto -->
-    <div class="center padded">
-        <div class="content">
-            <div class="row vert-pad">
-                <div class="left padded">
-                    <h1>¡Ahora o nunca! Trabajemos juntos</h1>
-                    <p>
-                        Daré mi mejor esfuerzo para aprender y aportar valor al proyecto para que podamos tener una fructífera relación. <br>
-                    </p>
-                </div>
-                <div id="contacto" class="right padded">
-                    <form action="#" class="contact-form" method="post">
-                        <input type="text" name="name" placeholder="Nombre" required>
-                        <input type="email" name="email" placeholder="Correo" required>
-                        <textarea placeholder="Mensaje" name="message" required minlength="10"></textarea>
-                        <button class="btn full-width" >Enviar</button>
-                    </form>
+        <!-- Contacto -->
+        <div class="center padded">
+            <div class="content">
+                <div class="row vert-pad">
+                    <div class="left padded">
+                        <h1>¡Ahora o nunca! Trabajemos juntos</h1>
+                        <p>
+                            Daré mi mejor esfuerzo para aprender y aportar valor al proyecto para que podamos tener una fructífera relación. <br>
+                        </p>
+                    </div>
+                    <div id="contacto" class="right padded">
+                        <form action="#" class="contact-form" method="post">
+                            <input type="text" name="name" placeholder="Nombre" required>
+                            <input type="email" name="email" placeholder="Correo" required>
+                            <textarea placeholder="Mensaje" name="message" required minlength="10"></textarea>
+                            <button class="btn full-width" >Enviar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 
